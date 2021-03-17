@@ -1,5 +1,6 @@
 from apscheduler.schedulers.blocking import BlockingScheduler
 import timer
+
 sched = BlockingScheduler()
 
 
@@ -7,7 +8,7 @@ sched = BlockingScheduler()
 def timed_job():
     print('This job is run every 30 seconds.')
 
-
     timer.time_function()
+
 
 sched.start()
